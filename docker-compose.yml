@@ -1,0 +1,10 @@
+services:
+  php-analyzer:
+    build:
+      context: ./docker
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app  # Это монтирует текущую директорию хоста в /app контейнера
+      - ./kaponir-api:/app/kaponir-api  # Добавьте эту строку для монтирования PHP файлов
+    working_dir: /app
+#    command: python main.py ./kaponir-api/source --output kaponir-api-source_report.csv
