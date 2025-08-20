@@ -1,0 +1,31 @@
+php-parser_report-creator/
+├── src/
+│   ├── __init__.py
+│   ├── config.py
+│   ├── php_analyzer.py
+│   ├── php_parser.py
+│   ├── description_manager.py
+│   ├── csv_writer.py
+│   └── utils.py
+├── tests/
+│   ├── __init__.py
+│   ├── test_config.py
+│   ├── test_php_analyzer.py
+│   ├── test_php_parser.py
+│   ├── test_description_manager.py
+│   ├── test_csv_writer.py
+│   ├── test_utils.py
+│   └── test_data/
+│       ├── test.php
+│       └── descriptions/
+│           ├── classes.json
+│           ├── constants.json
+│           ├── methods.json
+│           ├── properties.json
+│           ├── variables.json
+│           └── functions.json
+├── main.py
+├── requirements.txt
+├── Makefile
+├── setup.py
+└── README.md
